@@ -1,0 +1,26 @@
+.cardFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+.pImgFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pHome{
+    margin-left: 15%;
+    margin-top: 5%
+}
+.imgHome{
+    width: 30%; 
+    border-radius: 10%;
+    margin-top: 15%;
+}
+.darkTheme{
+    background-color: black;
+    color: white;
+}

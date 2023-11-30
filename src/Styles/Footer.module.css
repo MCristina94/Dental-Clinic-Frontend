@@ -1,0 +1,16 @@
+.footerSt{
+    background-color: #051D40;
+    display: flex;
+    flex-direction: column;
+}
+.icono{
+    width: 25px;
+    margin: 2%;
+}
+.sentenceF{
+    color: white;
+    font-weight: normal;
+}
+.darkTheme{
+    background-color: rgb(38, 38, 38);
+}

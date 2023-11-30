@@ -1,0 +1,19 @@
+.detailContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 5% ;
+    margin-left: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.darkTheme{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,26 @@
+.card{
+    border-radius: 10%;
+    max-width: 200px; /* Establece el ancho fijo de la tarjeta */
+    height: 300px;
+    padding: 2%;
+    margin: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.imgCard{
+    width: 80%;
+}
+.buttonCard{
+    border-radius: 10%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.darkTheme{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
