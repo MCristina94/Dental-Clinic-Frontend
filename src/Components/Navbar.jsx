@@ -5,6 +5,7 @@ import { useDentistState } from '../Context/globalContext'
 
 const Navbar = () => {
   const {state} = useDentistState();
+
   return (
     //La pagina tiene tres pages principales: home donde se redenrizan las cards de dentist
     //Contact para enviar los datos del usuario y favs donde se renderizan las cards de dentist preferidos por el usuario

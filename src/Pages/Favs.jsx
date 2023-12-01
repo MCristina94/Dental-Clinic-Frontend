@@ -10,7 +10,7 @@ const Favs = () => {
   }, [])
   return (
     <div className={`${!state.theme ? darkTheme : undefined}`}>
-      <h1 style={{margin: '0', padding: '5%'}}>Your Favorites</h1>
+      <h1 style={{margin: '0', padding: '5%', paddingBottom: '0'}}>Your Favorites</h1>
       
       {state.favs && (
         <div className={favsContainer}>

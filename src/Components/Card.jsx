@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDentistState } from '../Context/globalContext'
 import avatar from '../Img/dentalavatar.png'
 import { Link } from 'react-router-dom';
-import {card, imgCard, buttonCard, darkTheme} from '../Styles/Card.module.css'
+import {card, imgCard, buttonCard, darkTheme, linkDarkTheme} from '../Styles/Card.module.css'
 
 const Card = ({dentist}) => {
   
@@ -36,12 +36,12 @@ const Card = ({dentist}) => {
      
       <Link to={'/detail/' + dentist.id} >
         <img className={imgCard} src={avatar} alt="avatar" /> 
-        <h3 style={{margin: '0'}}>{dentist.name}</h3>
-        <h4 style={{margin: '0'}}>{dentist.username}</h4>
+        <h3 className={`${state.theme ? undefined : linkDarkTheme }`} style={{margin: '0'}}>{dentist.name}</h3>
+        <h4 className={`${state.theme ? undefined : linkDarkTheme }`} style={{margin: '0'}}>{dentist.username}</h4>
       </Link>
       <div style={{display:'flex', flexDirection: 'column'}}>
         <h4 >Location: {dentist.address.city}</h4>
-        <button className = {buttonCard} onClick={dentistStorage}>{isFavorite? <i className="fa-solid fa-star" style={{color: "#fbff00"}}></i> : <i className="fa-regular fa-star"></i> }</button>
+        <button className = {buttonCard} onClick={dentistStorage}>{isFavorite? <i className="fa-solid fa-star" style={{color: "#FFD700"}}></i> : <i className="fa-regular fa-star" style={state.theme ? {undefined} : {color: '#FFFFFF'}}></i> }</button>
       </div>
         
       </div>
