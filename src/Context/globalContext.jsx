@@ -7,11 +7,24 @@ import { useParams } from "react-router-dom";
 const DentistStates = createContext();
 
 const reducer = (state, action) => {
+    console.log(action.type);
     switch(action.type){
         case 'GET-DENTISTS': //Trae la información de la api y la guarda en la lista (dentistList)
             return {...state, dentistList: action.payload}
         case 'ADD-FAVS' :
-            return {...state, favs: [...state.favs, action.payload]}
+            const favs = [...state.favs, action.payload]
+            localStorage.setItem('favorites', JSON.stringify(favs))
+            return {...state, favs}
+        case 'LOAD-FAVS' :
+            const favorites = localStorage.getItem('favorites')
+            if(favorites){
+                return {...state, favs:JSON.parse(favorites) }
+            }
+            return {...state}
+        case 'DELETE-FAV': 
+            const currentFavs = state.favs.filter(fav => fav.id !== action.payload.id)
+            localStorage.setItem('favorites', JSON.stringify(currentFavs))
+            return {...state, favs: currentFavs}
         case 'CHANGE-THEME' :
             return {...state, theme: !state.theme}
     }
@@ -32,7 +45,9 @@ const Context = ({children}) => {
         axios(url)
         .then(res => dispatch({type: 'GET-DENTISTS', payload: res.data}))
     }, [])
- 
+    
+
+
     return (
         //Se envia la información de state y dispatch por medio del useContext para ser utilizada en los componentes
         <DentistStates.Provider value={{
@@ -41,6 +56,9 @@ const Context = ({children}) => {
             {children}
         </DentistStates.Provider>
     )
+
+
+
 }
 
 export default Context

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDentistState } from '../Context/globalContext'
 import Card from '../Components/Card';
 import {cardFlex, pImgFlex, pHome, imgHome, darkTheme} from '../Styles/Home.module.css'
@@ -7,9 +7,11 @@ import girl from '../Img/lady.jpg'
 const Home = () => {
   
   //Se hace el llamado al useContext y se guarda en una variable
-  const {state} = useDentistState();
-  console.log({state});
-
+  const {state, dispatch} = useDentistState();
+  useEffect(() => {
+    dispatch({type: 'LOAD-FAVS'})
+  }, [])
+  
   return (
     <div className={`${!state.theme ? darkTheme : undefined}`}>
       <h1 style={{padding: '2%', margin: '0'}}>Dental Clinic - Enjoy a lot more</h1>
