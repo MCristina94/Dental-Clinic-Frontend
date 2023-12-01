@@ -13,7 +13,6 @@ const Navbar = () => {
       <Link className = {linkNav} to = '/'> <h4>Home</h4></Link>
       <Link className = {linkNav} to = '/contact' ><h4>Contact</h4></Link>
       <Link className = {linkNav} to = '/favs'> <h4>Favs</h4></Link>
-      {/*<button className={btnTheme}>Theme {state.theme ? '🌞':'🌚'}</button>*/}
     </div>
   )
 }
