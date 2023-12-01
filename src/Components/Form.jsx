@@ -44,7 +44,7 @@ const Form = () => {
           </div>
         </div>
         {show && <Message customer = {customer}/>}
-        {error && <h3 style={{color: 'red' }}>Please verify your information again.</h3>}
+        {error && <h3 style={{color: 'red' , margin: '0', padding: '2%'}}>Please verify your information again.</h3>}
       </form>
 
 
