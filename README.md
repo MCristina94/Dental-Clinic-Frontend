@@ -1,10 +1,60 @@
-# React + Vite
+# Proyecto Final de Front-end 3: Clínica Dental
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_Este proyecto consiste en una página web dedicada a una clínica dental, donde se muestran tarjetas con diferentes odontólogos obtenidos de una base de datos. Los usuarios tienen la capacidad de añadir o eliminar odontólogos a su lista de favoritos, así como obtener información detallada sobre cada profesional. Además, se incluye un formulario de contacto para solicitar más información a través del correo electrónico y la opción de cambiar el tema de la página según la preferencia del usuario (oscuro o claro).
 
-Currently, two official plugins are available:
+Para visualizar la página web en acción, puedes hacer clic en el siguiente enlace: https://finalproject-frontend3-maureen.vercel.app/_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas ⚙️
 
-Enlace Vercel para visualizar la app: https://finalproject-frontend3-maureen.vercel.app/
+Este proyecto se desarrolló utilizando las siguientes tecnologías:
+
+React
+
+JavaScript
+
+Vite (Herramienta de construcción para aplicaciones web)
+
+
+
+### Instrucciones de Clonación 🔧
+
+_Si deseas clonar el repositorio y explorar el código en un entorno de desarrollo, sigue estos pasos:_
+
+
+1. Clona el repositorio desde GitHub:
+```
+git clone <URL_del_repositorio>
+```
+2. Navega hasta el directorio del proyecto:
+```
+cd nombre_del_proyecto
+```
+3. Instala las dependencias necesarias:
+```
+npm install
+```
+4. Inicia el servidor de desarrollo:
+```
+npm run dev
+```
+Una vez que el servidor esté en funcionamiento, podrás acceder al proyecto localmente en tu navegador web.
+
+
+
+## Construido con 🛠️
+
+
+* ([React](https://es.react.dev/learn/installation)) - El framework usado
+* ([Vite](https://es.vitejs.dev/guide/)) - Herramienta de construcción
+
+
+## Autores ✒️
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Maureen** - *Frontend* - [MCristina94](https://github.com/MCristina94)
+
+
+
+---
+⌨️ con ❤️ por [MCristina94](https://github.com/MCristina94)😊
